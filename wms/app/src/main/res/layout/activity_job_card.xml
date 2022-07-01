@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303b79"
+    tools:context=".JobCard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="cursive"
+                android:text="Job Card Opening"
+                android:textAlignment="center"
+                android:textColor="#F8FFFFFF"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/jc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:ems="10"
+                android:hint="Enter Job Card Number"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:textColor="#FE0D0000"
+                android:textColorHint="#FB0E0101" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/datePickerButton"
+                style="?android:spinnerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:ems="10"
+                android:minHeight="48dp"
+                android:onClick="openDatePicker"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Click to set Date of Job Card Opening"
+                android:textColor="@color/black"
+                android:textColorHint="#FB0E0101"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:ems="10"
+                android:hint="Customer Name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:textColor="#FE0D0000"
+                android:textColorHint="#FB0E0101" />
+
+            <EditText
+                android:id="@+id/make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:ems="10"
+                android:hint="Enter Car make year"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:textColor="#FE0D0000"
+                android:textColorHint="#FB0E0101" />
+
+            <EditText
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:ems="10"
+                android:hint="Enter Model"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:textColor="#FE0D0000"
+                android:textColorHint="#FB0E0101" />
+
+            <EditText
+                android:id="@+id/repair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:ems="10"
+                android:hint="Type of Repair"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:textColor="#FE0D0000"
+                android:textColorHint="#FB0E0101" />
+
+            <EditText
+                android:id="@+id/technician"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:ems="10"
+                android:hint="Technician"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:textColor="#FE0D0000"
+                android:textColorHint="#FB0E0101" />
+
+            <Spinner
+                style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
+                android:id="@+id/status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:contentDescription="Status"
+                android:dropDownWidth="wrap_content"
+                android:entries="@array/statusArray"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:spinnerMode="dropdown" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/datePickerButton2"
+                style="?android:spinnerStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/buttons"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:ems="10"
+                android:minHeight="48dp"
+                android:onClick="openDatePicker2"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Click to set Expected date of completion"
+                android:textColor="@color/black"
+                android:textColorHint="#FB0E0101"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/buttons"
+                android:paddingStart="20dp"
+                android:text="Create Job  Card" />
+
+            <TextView
+                android:id="@+id/date"
+                android:textColor="#303b79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/date1"
+                android:textColor="#303b79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

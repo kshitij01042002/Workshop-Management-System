@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303b79"
+    tools:context=".EmployeePage">
+
+    <Button
+        android:id="@+id/CheckStatus"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/buttons"
+        android:onClick="CheckStatus"
+        android:text="Check Status"
+        app:layout_constraintBottom_toTopOf="@+id/UpdateStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobcard" />
+
+    <Button
+        android:id="@+id/UpdateStatus"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/buttons"
+        android:onClick="UpdateStatus"
+        android:text="Update Status"
+        app:layout_constraintBottom_toTopOf="@+id/checkbystatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckStatus" />
+
+    <Button
+        android:id="@+id/jobcard"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/buttons"
+        android:text="Create JobCard"
+        app:layout_constraintBottom_toTopOf="@+id/CheckStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/checkbystatus"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/buttons"
+        android:text="Check By Status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateStatus" />
+</androidx.constraintlayout.widget.ConstraintLayout>

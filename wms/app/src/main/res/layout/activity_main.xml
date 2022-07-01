@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303b79"
+    android:backgroundTintMode="add"
+    android:foregroundTint="#700D0D"
+    android:foregroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/admin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="281dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="389dp"
+        android:background="@drawable/buttons"
+        android:elevation="5dp"
+        android:onClick="AdminActivity"
+        android:shadowColor="#AF6E6E"
+        android:text="Admin Login"
+        android:textColor="#100303"
+        android:transitionName="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.76"
+        app:rippleColor="#BA2020"
+        app:strokeColor="#FF5722" />
+
+    <Button
+        android:id="@+id/employee"
+        android:layout_width="281dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="224dp"
+        android:background="@drawable/buttons"
+        android:onClick="EmployeeActivity"
+        android:text="Employee Login"
+        android:textColor="#EC090000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="313dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/admin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

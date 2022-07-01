@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303b79"
+    tools:context=".RemoveEmployeeData">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginBottom="52dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Name of the Emplloyee"
+        android:inputType="textPersonName"
+        android:textColor="#110101"
+        android:textColorHint="#140101"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="449dp"
+        android:background="@drawable/buttons"
+        android:text="Delete Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

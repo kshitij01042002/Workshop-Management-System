@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLoginActivity"
+    android:background="#303b79"
+    android:padding="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:contentDescription="TODO" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin \n Login"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Admin Name"
+                android:textColorHint="@color/black"
+                app:boxBackgroundColor="#fcb92d"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@android:drawable/ic_menu_edit"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ID"
+                    android:textSize="22dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="#0B0000"
+                    android:textColorHint="#0D0101"
+                    app:hintTextColor="#0B0101"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:boxBackgroundColor="#fcb92d"
+                android:hint="Enter Password"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@android:drawable/ic_lock_idle_lock"
+                app:passwordToggleTint="#000000"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/employeepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22dp"
+                    android:inputType="textPassword"
+                    android:textColor="#150101"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttons"
+            android:elevation="5dp"
+            android:onClick="AdminActivity"
+            android:text="Register"
+            android:textColor="@color/black" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

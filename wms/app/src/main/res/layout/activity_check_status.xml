@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303b79"
+    tools:context=".CheckStatus">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/jcnumber"
+            android:layout_width="240dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/buttons"
+            android:ems="10"
+            android:fadingEdge="horizontal"
+            android:hint="Enter Job Card Number"
+            android:inputType="textPersonName"
+            android:textColor="#130101"
+            android:textColorHint="#AA0D0101"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/viewstatus"
+            android:layout_marginLeft="70dp"
+            android:layout_width="222dp"
+            android:layout_height="78dp"
+            android:layout_marginBottom="63dp"
+            android:background="@drawable/buttons"
+            android:text="View Status" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/list"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#303b79"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</ScrollView>
